@@ -1,5 +1,21 @@
 - Mengambil inputan dari shell :
 $1 -> ambil elemen pertama
 $* -> ambil semua elemen
+
 - Menghitung length suatu string :
 ${#string}
+
+- Mengambil data json dari url : use 'jq'
+curl 'https://jsonplaceholder.typicode.com/users/1' | jq '.'
+
+- Baca data dari file :
+$(cat $path)
+
+- Ambil line pertama dari file :
+line="$(head -10 $path)"
+
+- Ambil line tertentu dari file :
+`sed -n '3p' /home/nmsad/abc.txt` ~ ini ambil line ke 3
+
+- Installing Nodejs :
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
