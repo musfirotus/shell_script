@@ -6,6 +6,6 @@ cat $filename | while read LINE; do
     file=${SOURCE[-1]}
     data=$(curl -s $LINE)
     echo $data > ${file}.json
-    # cat ${file}.json | json_pp
+    cat ${file}.json | json_pp # disable aja, supaya tidak memenuhi bash
     echo "${file}.json created"
 done
