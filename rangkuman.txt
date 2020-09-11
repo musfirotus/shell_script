@@ -1,0 +1,5 @@
+- Mengambil inputan dari shell :
+$1 -> ambil elemen pertama
+$* -> ambil semua elemen
+- Menghitung length suatu string :
+${#string}
